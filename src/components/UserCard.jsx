@@ -1,6 +1,6 @@
 export default function UserCard({ user }) {
   return (
-    <div className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+    <div className="bg-white p-4 rounded-lg shadow hover:shadow-xl hover:-translate-y-1 transition-all">
       <img
         src={user.avatar_url}
         alt={user.login}
@@ -13,7 +13,7 @@ export default function UserCard({ user }) {
         href={user.html_url}
         target="_blank"
         rel="noreferrer"
-        className="block text-center text-blue-500 text-sm mt-1"
+        className="block text-center text-blue-600 text-sm mt-1 hover:underline"
       >
         View Profile
       </a>
